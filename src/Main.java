@@ -1,7 +1,33 @@
 public class Main {
     public static void main(String[] args) {
         // Test CharacterList
-
+        Character c1 = new Character(
+                1,
+                "Jim Henson",
+                "Rogue",
+                "Gnome",
+                12,
+                13,
+                14
+        );
+        Character c2 = new Character(
+                1,
+                "Darth Vader",
+                "Wizard",
+                "Half-Giant",
+                15,
+                15,
+                15
+        );
+        Character c3 = new Character(
+                3,
+                "Frodo Baggins",
+                "Rogue",
+                "Halfling",
+                11,
+                18,
+                12
+        );
 
 
         // Test Character
