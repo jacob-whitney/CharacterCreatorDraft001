@@ -15,8 +15,23 @@ public class CharacterList {
     }
 
     // Methods
-    public List<Character> getCharacters() {
+    /*public List<Character> getCharacters() {
+
+        Character character = this.getCharacter(0);
         return characters;
+    }*/
+
+    public Character getCharacter(int index) {
+        if (!characters.isEmpty() && index >= 0 && index < characters.size()) {
+            return characters.get(index);
+        } else {
+            System.out.println("This list is empty");
+            return null;
+        }
+    }
+
+    public int getSize() {
+        return characters.size();
     }
 
     public List<Character> addCharacter( Character character) {

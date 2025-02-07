@@ -11,7 +11,7 @@ public class Main {
                 14
         );
         Character c2 = new Character(
-                1,
+                2,
                 "Darth Vader",
                 "Wizard",
                 "Half-Giant",
@@ -28,6 +28,30 @@ public class Main {
                 18,
                 12
         );
+
+        // 2 Make these user entered
+        CharacterList list = new CharacterList();
+        list.addCharacter(c1);
+        list.addCharacter(c2);
+        list.addCharacter(c3);
+
+        // 1 Make this into a CharacterList method?
+        int listSize = list.getSize();
+
+        if (listSize != 0) {
+            for (int i = 0; i < listSize; i++) {
+                Character c = list.getCharacter(i);
+                System.out.println(c.getId());
+                System.out.println(c.getName());
+                System.out.println(c.getClassification());
+                System.out.println(c.getStr());
+                System.out.println(c.getDex());
+                System.out.println(c.getCon());
+            }
+        } else {
+            System.out.println("List is empty");
+        }
+
 
 
         // Test Character
