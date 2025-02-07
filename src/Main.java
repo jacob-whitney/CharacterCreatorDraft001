@@ -35,22 +35,11 @@ public class Main {
         list.addCharacter(c2);
         list.addCharacter(c3);
 
-        // 1 Make this into a CharacterList method?
-        int listSize = list.getSize();
+        System.out.println(list.getCharactersString());
 
-        if (listSize != 0) {
-            for (int i = 0; i < listSize; i++) {
-                Character c = list.getCharacter(i);
-                System.out.println(c.getId());
-                System.out.println(c.getName());
-                System.out.println(c.getClassification());
-                System.out.println(c.getStr());
-                System.out.println(c.getDex());
-                System.out.println(c.getCon());
-            }
-        } else {
-            System.out.println("List is empty");
-        }
+        c3.setName("Samwise Gamji");
+
+        System.out.println(list.getCharactersString());
 
 
 
